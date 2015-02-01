@@ -1,5 +1,0 @@
-F:\Projects\JML.SteelIce\JML.Common\bin\Debug\JML.Common.dll
-F:\Projects\JML.SteelIce\JML.Common\bin\Debug\JML.Common.pdb
-F:\Projects\JML.SteelIce\JML.Common\obj\Debug\JML.Common.csprojResolveAssemblyReference.cache
-F:\Projects\JML.SteelIce\JML.Common\obj\Debug\JML.Common.dll
-F:\Projects\JML.SteelIce\JML.Common\obj\Debug\JML.Common.pdb
