@@ -1,0 +1,63 @@
+﻿@model IEnumerable<JML.SteelIce.Models.ErrorLog>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Count)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RepeatingAt)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ExceptionMessage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserAccount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RepeatLog)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Count)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RepeatingAt)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ExceptionMessage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserAccount)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RepeatLog)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

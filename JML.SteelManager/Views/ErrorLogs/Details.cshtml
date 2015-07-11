@@ -1,0 +1,66 @@
+﻿@model JML.SteelIce.Models.ErrorLog
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ErrorLog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Count)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Count)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RepeatingAt)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RepeatingAt)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExceptionMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExceptionMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserAccount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserAccount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RepeatLog)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RepeatLog)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
